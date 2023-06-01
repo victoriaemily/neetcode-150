@@ -13,8 +13,7 @@ public:
         }
         return false;
     }
-
-// O(logn) + O(n) runtime complexity - first sorts the vectors then loops through
+// O(nlogn) runtime complexity; O(nlogn) + O(n) runtime complexity - first sorts the vectors then loops through
 // alternative but longer runtime solution below utilizes setsclass Solution {
     bool containsDuplicateAlt(vector<int>& nums) {
         std::set<int> numSet;
